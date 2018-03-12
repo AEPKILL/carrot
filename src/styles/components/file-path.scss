@@ -1,0 +1,36 @@
+@import '../colors.scss';
+
+$file-path-height: 40px;
+
+.file-path {
+  $text-color: rgb(102, 102, 102);
+  line-height: $file-path-height;
+  color: $text-color;
+  user-select: none;
+
+  & > div {
+    display: inline-block;
+  }
+
+  .link {
+    color: $main-background;
+    cursor: pointer;
+    &.current {
+      color: $text-color;
+    }
+  }
+
+  .gap {
+    margin: 0 2px;
+    color: $main-background;
+  }
+
+  .path-line-seg {
+    display: inline-block;
+    margin: 0 2;
+  }
+  .path-all-file {
+  }
+  .path-back {
+  }
+}

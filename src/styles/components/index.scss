@@ -1,0 +1,17 @@
+@import './app.scss';
+@import './tabs.scss';
+@import './file-list.scss';
+@import './loading.scss';
+@import './list-view.scss';
+@import './file-icon.scss';
+@import './tabs.scss';
+
+.no-login {
+  text-align: center;
+  color: $main-background;
+  padding-top: 50px;
+  height: 100px;
+  & > span {
+    cursor: pointer;
+  }
+}

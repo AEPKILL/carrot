@@ -1,0 +1,59 @@
+.carrot-modal-iframe {
+  width: auto;
+  height: auto;
+}
+.carrot-modal {
+  @include absoluteCenter();
+  text-align: left;
+  position: fixed;
+  width: 560px;
+  z-index: 1000;
+  background: #fff;
+  border-radius: 5px;
+
+  &__header {
+    background-color: #f7faff;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 1px solid #c4dbfe;
+    word-break: break-all;
+    padding: 10px;
+  }
+  &__footer {
+    padding: 15px;
+    &:after {
+      content: '.';
+      display: block;
+      visibility: hidden;
+      height: 0;
+      line-height: 0;
+      font-size: 0;
+      clear: both;
+    }
+  }
+  &__footer &__button {
+    margin-left: 10px;
+  }
+  &__button {
+    float: right;
+    text-decoration: none;
+    border: 1px solid #c0d9fe;
+    border-radius: 4px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 20px;
+    cursor: pointer;
+    font-size: 14px;
+    user-select: none;
+    &.ok {
+      color: #fff;
+      background: #3b8cff;
+    }
+    &.cancel {
+      color: #3b8cff;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

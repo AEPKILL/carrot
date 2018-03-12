@@ -1,0 +1,31 @@
+@import '../utils.scss';
+@import '../colors.scss';
+@import './tabs.scss';
+@import './file-path.scss';
+@import './list-view.scss';
+@import './file-line.scss';
+@import './file-icon.scss';
+@import './loading.scss';
+
+.ps__rail-y {
+  z-index: 999;
+}
+
+.file-list {
+  position: relative;
+  .file-path {
+    height: $file-path-height;
+    box-sizing: border-box;
+    border-bottom: 1px solid #f2f6fd;
+    padding: 0 5px;
+  }
+  .list-view {
+    height: $tabs-body-height - $file-path-height;
+  }
+  .empty-tips {
+    margin-top: 20px;
+    color: $main-text-color;
+    text-align: center;
+    font-size: 14px;
+  }
+}

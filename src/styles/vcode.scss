@@ -1,0 +1,20 @@
+@import './colors.scss';
+
+.carrot-modal.vcode {
+  color: $main-text-color;
+  .carrot-vcode {
+    height: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    &__change {
+      color: #06c;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    * {
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+  }
+}

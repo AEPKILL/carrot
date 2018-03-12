@@ -1,0 +1,75 @@
+@import '../colors.scss';
+
+$line-active-background: #f3f9ff;
+
+.file-line {
+  $file-line-height: 37px;
+  $icon-width: 26px;
+  $icon-gap: ($file-line-height - $icon-width) / 2;
+  $icon-box-width: $icon-width + $icon-gap * 2;
+
+  $button-icon-width: 16px;
+  $button-icon-gap: 10px;
+
+  $button-container-width: $button-icon-width * 3 + $button-icon-gap * 2;
+  $file-name-width: $app_width - $icon-box-width;
+
+  height: $file-line-height;
+  line-height: $file-line-height;
+  font-size: 12px;
+  position: relative;
+  color: $main-text-color;
+  user-select: none;
+  border-bottom: 1px solid #f2f6fd;
+
+  > div {
+    vertical-align: top;
+  }
+
+  &__icon {
+    position: absolute;
+    width: $icon-width;
+    height: $icon-width;
+    background: red;
+    left: $icon-gap;
+    top: $icon-gap;
+  }
+
+  &__name {
+    display: inline-block;
+    margin-left: $icon-box-width;
+    width: $file-name-width;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    &:hover {
+      color: #508ffe;
+    }
+  }
+
+  // conainer 下的 button
+  &__button {
+    display: inline-block;
+    cursor: pointer;
+    color: $main-background;
+  }
+
+  & .button-container {
+    display: none;
+    .iconfont {
+      margin-left: $button-icon-gap/2;
+    }
+  }
+  &.active {
+    background: $line-active-background;
+  }
+  &.active &__name {
+    width: $file-name-width - $button-container-width;
+  }
+  &.active .button-container {
+    display: inline-block;
+    width: $button-container-width;
+    height: $file-line-height;
+  }
+}

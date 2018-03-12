@@ -1,0 +1,20 @@
+@import 'utils.scss';
+@import './components/file-list.scss';
+@import './components/app.scss';
+@import './modal.scss';
+
+
+.carrot-modal .download {
+  .file-line.active .file-line__name,
+  .file-line__name {
+    width: 560px - 45px;
+  }
+  .file-line.active .button-container,
+  .button-container {
+    display: none;
+  }
+  &__url {
+    padding: 0 5px;
+    color: #888;
+  }
+}

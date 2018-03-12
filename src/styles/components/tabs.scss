@@ -1,0 +1,38 @@
+@import './app.scss';
+@import '../colors.scss';
+
+$tabs-header-height: 50px;
+$tabs-body-height: $app_height - $tabs-header-height;
+
+.tabs-header {
+  &-container {
+    background: $main-background;
+    position: relative;
+  }
+  &__line {
+    position: absolute;
+    height: 3px;
+    background: $white;
+    bottom: 0px;
+    transition: left 0.5s;
+  }
+  &.active {
+    color: $white;
+  }
+  display: inline-block;
+  height: $tabs-header-height;
+  line-height: $tabs-header-height;
+  color: darken($white, 10%);
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.tabs-body {
+  &-container,
+  &-container > div {
+    width: 100%;
+    height: $tabs-body-height;
+  }
+}

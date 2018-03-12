@@ -1,0 +1,14 @@
+{
+  "video": ["mkv", "mp4", "flv", "avi", "rm", "rmvb", "mov"],
+  "zip": ["zip", "rar", "7z", "tar"],
+  "txt": ["txt"],
+  "ppt": ["ppt"],
+  "code": ["ts", "js", "cpp", "c", "h"],
+  "pdf": ["pdf"],
+  "xls": ["xls"],
+  "doc": ["doc", "docx"],
+  "music": ["mp3", "acc", "wma"],
+  "pic": ["jpg", "jpeg", "gif", "png", "psd"],
+  "app": ["exe"],
+  "apk": ["apk"]
+}

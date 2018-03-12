@@ -1,0 +1,27 @@
+@import 'colors.scss';
+@import './components/index.scss';
+@import './download-box.scss';
+@import './vcode.scss';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Microsoft Yahei', 'Segoe UI', Tahoma, Geneva, Verdana,
+    sans-serif;
+  position: relative;
+}
+
+#app,
+html,
+body {
+  width: $app_width;
+  height: $app_height;
+}
+
+.tabs-body-container .todo {
+  color: $main-text-color;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 20px;
+}

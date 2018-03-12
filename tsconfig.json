@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "es2015"],
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "extends": "./tsconfig.base.json",
+  "exclude": ["./build/**/*.ts"]
+}

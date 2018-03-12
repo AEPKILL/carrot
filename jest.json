@@ -1,0 +1,10 @@
+{
+  "collectCoverage": true,
+  "collectCoverageFrom": ["src/**/*.ts"],
+  "coverageDirectory": "coverage",
+  "transform": {
+    ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+  },
+  "testRegex": "/test/.*\\.ts?$",
+  "moduleFileExtensions": ["ts", "js", "json"]
+}

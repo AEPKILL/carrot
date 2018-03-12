@@ -1,0 +1,48 @@
+.file-icon {
+  background: url(/assets/images/file-icon.png) no-repeat;
+  &.video {
+    background-position: -235px -54px;
+  }
+  &.folder {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAaklEQVRIx2NgGHbgzQFPFyB+CcT/CeCXULUgPQz///8nCYM03SPCEhi+/f9aJAM5mIEES8CYbIuAxH8a42dA7EsPi0D4Cb0s+j9q0ahFoxaNWjRqEZUtekmvasIPiJ/T0BKQ2X4Mo4BcAADq2ZkttZdJkgAAAABJRU5ErkJggg==) center no-repeat;
+  }
+  &.app {
+    background: url(/assets/images/app.png) center no-repeat;
+  }
+  &.apk {
+    background: url(/assets/images/apk.png) center no-repeat;
+  }
+  &.default {
+    background: url(/assets/images/default.png) center no-repeat;
+  }
+  &.bt {
+    background-position: -235px -574px;
+  }
+  &.zip {
+    background-position: -235px 0px;
+  }
+  &.txt {
+    background-position: -235px -299px;
+  }
+  &.mp3 {
+    background-position: -235px -81px;
+  }
+  &.doc {
+    background-position: -235px -353px;
+  }
+  &.ppt {
+    background-position: -235px -380px;
+  }
+  &.xls {
+    background-position: -235px -407px;
+  }
+  &.code {
+    background-position: -235px -461px;
+  }
+  &.pdf {
+    background-position: -235px -326px;
+  }
+  &.pic {
+    background-position: -235px -272px;
+  }
+}
